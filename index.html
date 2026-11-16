@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Master | 考研核心筆記與知識庫</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <sidebar>
+        <h1>CS Master Wiki</h1>
+        <nav>
+            <a href="#ds">資料結構與演算法</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01. 時間複雜度與漸進符號</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 02. 圖的走訪 (BFS/DFS)</p>
+            <a href="#os" style="margin-top: 1rem;">作業系統 (OS)</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01.行程排程演算法</p>
+            <a href="#linear" style="margin-top: 1rem;">線性代數</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01. 矩陣對角化與特徵值</p>
+        </nav>
+    </sidebar>
+
+    <main>
+        <div class="card">
+            <h2>🚀 歡迎來到 CS Master 考研知識庫</h2>
+            <p>本網站依據嚴格的 <code>AGENTS.md</code> 規範建立，專為資訊工程研究所入學考試設計。透過模組化結構，確保所有核心考點、演算法推導與程式碼實作皆具備最高品質與可擴充性。</p>
+            <p>點擊左側導覽列即可快速切換各科目核心筆記。</p>
+        </div>
+
+        <div class="card" id="ds">
+            <h2>📊 資料結構：圖的走訪 (Graph Traversal)</h2>
+            <p><strong>核心觀念：</strong>圖的走訪包含廣度優先搜尋 (BFS) 與深度優先搜尋 (DFS)。在考研中常考結合最短路徑、拓樸排序（Topological Sort）與連通分量（Connected Components）的綜合應用。</p>
+            <p><strong>時間複雜度：</strong>若使用相鄰串接串列（Adjacency List），時間複雜度為 $O(V + E)$；若使用相鄰矩陣（Adjacency Matrix），則為 $O(V^2)$。</p>
+        </div>
+    </main>
+</body>
+</html>
