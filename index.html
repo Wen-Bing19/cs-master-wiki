@@ -3,34 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Master | 考研核心筆記與知識庫</title>
+    <title>CS Master | 考研六大核心科目聖經知識庫</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <sidebar>
         <h1>CS Master Wiki</h1>
         <nav>
-            <a href="#ds">資料結構與演算法</a>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01. 時間複雜度與漸進符號</p>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 02. 圖的走訪 (BFS/DFS)</p>
-            <a href="#os" style="margin-top: 1rem;">作業系統 (OS)</a>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01.行程排程演算法</p>
-            <a href="#linear" style="margin-top: 1rem;">線性代數</a>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-left: 1rem;">• 01. 矩陣對角化與特徵值</p>
+            <!-- 1. 資料結構與演算法 -->
+            <a href="#ds">1. 資料結構與演算法 (CLRS)</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 漸進符號與複雜度分析</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. 排序法與順序統計量</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. 進階資料結構 (AVL/RB-Tree)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 圖論演算法 (BFS/DFS/MST)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 05. 演算法設計策略 (DP/Greedy)</p>
+
+            <!-- 2. 作業系統 -->
+            <a href="#os" style="margin-top: 0.8rem;">2. 作業系統 (恐龍書)</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 行程與執行緒管理</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. CPU 排程演算法</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. 同步與互斥 (Semaphore)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 死結處理 (Banker's Algo)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 05. 記憶體管理與虛擬記憶體</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 06. 檔案系統與 Disk 排程</p>
+
+            <!-- 3. 計算機組織 -->
+            <a href="#co" style="margin-top: 0.8rem;">3. 計算機組織 (RISC-MIPS)</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 效能評估與 Amdahl's Law</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. 指令集架構 (MIPS ISA)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. 電腦算術 (Booth/IEEE754)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 管線化與 Hazards 處理</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 05. 快取記憶體 Mapping</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 06. 虛擬記憶體與 TLB</p>
+
+            <!-- 4. 離散數學 -->
+            <a href="#dm" style="margin-top: 0.8rem;">4. 離散數學 (Rosen)</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 數理邏輯與證明方法</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. 集合論、二元關係與 Poset</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. 排列組合與生成函數</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 圖論與尤拉/漢彌爾頓圖</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 05. 代數結構 (Group/Ring/Field)</p>
+
+            <!-- 5. 線性代數 -->
+            <a href="#linear" style="margin-top: 0.8rem;">5. 線性代數 (Lay)</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 線性方程組與 LU 分解</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. 向量空間與四個基本子空間</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. Gram-Schmidt 與最小平方法</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 特徵值、對角化與 SVD</p>
+
+            <!-- 6. 演算法分析與設計 -->
+            <a href="#algo-analysis" style="margin-top: 0.8rem;">6. 演算法分析與設計</a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 01. 遞迴關係式與 Master Theorem</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 02. 網路流 (Network Flow)</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 03. NP-Completeness 與 Reduction</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-left: 1rem;">• 04. 近似演算法 (Approximation)</p>
         </nav>
     </sidebar>
 
     <main>
         <div class="card">
-            <h2>🚀 歡迎來到 CS Master 考研知識庫</h2>
-            <p>本網站依據嚴格的 <code>AGENTS.md</code> 規範建立，專為資訊工程研究所入學考試設計。透過模組化結構，確保所有核心考點、演算法推導與程式碼實作皆具備最高品質與可擴充性。</p>
-            <p>點擊左側導覽列即可快速切換各科目核心筆記。</p>
+            <h2>🚀 CS Master 考研核心筆記與知識庫</h2>
+            <p>本網站依據 <code>AGENTS.md</code> 規範建立，對標資工所考研六大科目之經典聖經教科書（CLRS、恐龍書、Patterson RISC-MIPS、Rosen、Lay 等）。</p>
         </div>
 
         <div class="card" id="ds">
-            <h2>📊 資料結構：圖的走訪 (Graph Traversal)</h2>
-            <p><strong>核心觀念：</strong>圖的走訪包含廣度優先搜尋 (BFS) 與深度優先搜尋 (DFS)。在考研中常考結合最短路徑、拓樸排序（Topological Sort）與連通分量（Connected Components）的綜合應用。</p>
-            <p><strong>時間複雜度：</strong>若使用相鄰串接串列（Adjacency List），時間複雜度為 $O(V + E)$；若使用相鄰矩陣（Adjacency Matrix），則為 $O(V^2)$。</p>
+            <h2>1. 資料結構與演算法 (CLRS 楓葉書)</h2>
+            <p><strong>核心講義地圖：</strong>涵蓋漸進符號、高級排序法、紅黑樹與 B-Tree、圖論 (BFS/DFS/Dijkstra) 及動態規劃等重點。</p>
+        </div>
+
+        <div class="card" id="os">
+            <h2>2. 作業系統 (Dinosaur Book 恐龍書)</h2>
+            <p><strong>核心講義地圖：</strong>涵蓋 PCB 行程轉換、CPU 排程、Critical Section 互斥鎖與 Semaphore、Banker's 死結避免法、Page Replacement 虛擬記憶體等。</p>
+        </div>
+
+        <div class="card" id="co">
+            <h2>3. 計算機組織與結構 (Patterson & Hennessy)</h2>
+            <p><strong>核心講義地圖：</strong>涵蓋 CPI/Amdahl's Law 效能算式、MIPS 指令集架構、Booth 乘法與 IEEE 754 浮點數、Pipeline Data/Control Hazards 及 Cache Mapping。</p>
+        </div>
+
+        <div class="card" id="dm">
+            <h2>4. 離散數學 (Rosen)</h2>
+            <p><strong>核心講義地图：</strong>涵蓋一階邏輯推導、Equivalence Relation/Poset 關係、生成函數與遞迴求解、尤拉/平面圖論及群環體代數結構。</p>
+        </div>
+
+        <div class="card" id="linear">
+            <h2>5. 線性代數 (Lay)</h2>
+            <p><strong>核心講義地圖：</strong>涵蓋高斯消去與 LU 分解、Null/Column Space 空間維度、Gram-Schmidt 正交化與最小平方、矩陣對角化與 SVD 奇異值分解。</p>
+        </div>
+
+        <div class="card" id="algo-analysis">
+            <h2>6. 演算法分析與設計 (Baase / CLRS Advanced)</h2>
+            <p><strong>核心講義地圖：</strong>涵蓋 Master Theorem 遞迴求解、Ford-Fulkerson 網路最大流、P/NP/NPC 多項式時間歸納證明及近似演算法。</p>
         </div>
     </main>
 </body>
